@@ -1,4 +1,4 @@
-package com.hellcorp.shoppinglist
+package com.hellcorp.shoppinglist.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
