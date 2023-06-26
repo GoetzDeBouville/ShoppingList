@@ -15,6 +15,7 @@ import com.hellcorp.shoppinglist.entities.ShoppingListNames
     version = 1
 )
 abstract class MainDatabase : RoomDatabase() {
+    abstract  fun getDao(): Dao //Получение доступа к интерфейсу Dao
     companion object {
         @Volatile
         private var INSTANCE: MainDatabase? = null
