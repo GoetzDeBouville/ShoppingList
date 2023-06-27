@@ -54,6 +54,10 @@ android {
         jvmTarget = '11'
     }
 
+    buildFeatures {
+        viewBinding true
+    }
+
     kapt {
         javacOptions {
             options.put("source", "11")
