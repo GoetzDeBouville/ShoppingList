@@ -3,6 +3,8 @@ package com.hellcorp.shoppinglist.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.hellcorp.shoppinglist.fragments.FragmentManager
+import com.hellcorp.shoppinglist.fragments.NoteFragment
 import com.hellcorp_studio.shoppinglist.R
 import com.hellcorp_studio.shoppinglist.databinding.ActivityMainBinding
 
@@ -22,7 +24,7 @@ class MainActivity : AppCompatActivity() {
                     Log.e("Settings onclick", "Settings")
                 }
                 R.id.notes -> {
-                    Log.e("Notes onclick", "Notes")
+                    FragmentManager.setFragment(NoteFragment.newInstance(), this)
                 }
                 R.id.shop_list -> {
                     Log.e("shop_list onclick", "shop_list")
